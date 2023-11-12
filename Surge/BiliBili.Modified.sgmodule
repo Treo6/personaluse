@@ -1,6 +1,6 @@
 #!name=BiliBili: Modified
 #!desc=哔哩哔哩：改皮
-#!author=MK
+#!author=Treo
 
 [Script]
 BiliBili.Modified.x.resource.show.skin = type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?.*, requires-body=1, script-path=https://raw.githubusercontent.com/Treo6/personaluse/main/Surge/js/BiliBili.Modified.js, argument=
