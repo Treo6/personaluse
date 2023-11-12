@@ -11,7 +11,7 @@
 			"id": "BiliBili.Modified.Setting",
 			"name": "BiliBili: Modified ",
 			"author": "@Treo6",
-			"script": "https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBili.Modified.response.js",
+			"script": "https://raw.githubusercontent.com/Treo6/personaluse/main/BoxJs/js/BiliBili.Modified.js",
 			"icons":
 			[
 				"https://avatars.githubusercontent.com/u/138954824?s=400&u=3202af7fe4e13a17d14785fa10d42325171c2bd9&v=4"
