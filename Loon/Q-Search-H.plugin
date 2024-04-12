@@ -1,0 +1,36 @@
+#!name=Q-Search H版快捷搜索
+#!desc=在Safari中更改搜索引擎为DuckDuckGo再使用此插件,关键字在搜索内容前后都生效,此为H版
+#!author=Treo6
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1060.png
+#!homepage=https://github.com/Treo6/personaluse
+
+[Rewrite]
+# 91    91搜索
+^https:\/\/duckduckgo.com\/\?q=91\+([^&]+).+ https://91porn.com/search_result.php?search_id=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+91.+ https://91porn.com/search_result.php?search_id=$1 302
+# ph    pornhub搜索
+^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+ph.+ https://cn.pornhub.com/video/search?search=$1 302
+# 51    51吃瓜搜索
+^https:\/\/duckduckgo.com\/\?q=51\+([^&]+).+ https://51cg1.com/search/$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+51.+ https://51cg1.com/search/$1 302
+# cg    黑料吃瓜搜索
+^https:\/\/duckduckgo.com\/\?q=cg\+([^&]+).+ https://chigua2.com/search/$1/ 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+cg.+ https://chigua2.com/search/$1/ 302
+# jab   jable搜索
+^https:\/\/duckduckgo.com\/\?q=jab\+([^&]+).+ https://jable.tv/search/$1/ 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+jab.+ https://jable.tv/search/$1/ 302
+# hm    haname搜索
+^https:\/\/duckduckgo.com\/\?q=hm\+([^&]+).+ https://hanime1.me/search?query=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+hm.+ https://hanime1.me/search?query=$1 302
+# 91s   91短视频搜索
+^https:\/\/duckduckgo.com\/\?q=91s\+([^&]+).+ https://cn1.91short.com/search?wd=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+91s.+ https://cn1.91short.com/search?wd=$1 302
+# bd    百度搜索
+^https?:\/\/duckduckgo\.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+^https?:\/\/duckduckgo\.com\/\?q=([^&]+)\+bd.+ https://www.baidu.com/s?wd=$1 302
+# 无关键字默认为Google搜索
+^https?:\/\/duckduckgo\.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+
+[MITM]
+hostname = duckduckgo.com
